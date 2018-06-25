@@ -1,0 +1,20 @@
+{
+	"version": 3,
+	"file": "stealth-colors.css",
+	"sources": [
+		"../../../src/themes/stealth/web/stealth-colors.scss",
+		"../../../src/themes/stealth/web/_stealth.web.settings.scss",
+		"../../../src/scss/oj/alta/_oj.alta.variables.scss",
+		"../../../src/scss/oj/utilities/_oj.utilities.urls.scss",
+		"../../../src/scss/oj/utilities/_oj.utilities.math.scss",
+		"../../../src/scss/oj/utilities/_oj.utilities.units.scss",
+		"../../../src/scss/oj/common/_oj.common.variables.scss",
+		"../../../src/scss/oj/utilities/_oj.utilities.modules.scss",
+		"../../../src/scss/oj/utilities/_oj.utilities.theming.vars.scss",
+		"../../../src/themes/altacolors/common/_vars.scss",
+		"../../../src/scss/oj/utilities/_oj.utilities.json.scss",
+		"../../../src/themes/altacolors/common/_contrast.scss"
+	],
+	"names": [],
+	"mappings": "AWgQA,AAAA,0BAA0B,CAAC;EACzB,WAAW,EDzIJ,okNAAW,GC6InB;;AFhOD,AAAA,aAAa,CAAC;EACZ,WAAW,ECkFJ,y+0BAAW,GDjFnB"
+}

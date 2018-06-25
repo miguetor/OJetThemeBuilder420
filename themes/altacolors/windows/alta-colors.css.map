@@ -1,0 +1,17 @@
+{
+	"version": 3,
+	"file": "alta-colors.css",
+	"sources": [
+		"../../../src/themes/altacolors/windows/alta-colors.scss",
+		"../../../src/scss/oj/alta-windows/_oj.alta.windows.variables.scss",
+		"../../../src/scss/oj/utilities/_oj.utilities.units.scss",
+		"../../../src/scss/oj/utilities/_oj.utilities.math.scss",
+		"../../../src/scss/oj/common/_oj.common.variables.scss",
+		"../../../src/scss/oj/utilities/_oj.utilities.urls.scss",
+		"../../../src/scss/oj/utilities/_oj.utilities.modules.scss",
+		"../../../src/scss/oj/utilities/_oj.utilities.theming.vars.scss",
+		"../../../src/scss/oj/utilities/_oj.utilities.json.scss"
+	],
+	"names": [],
+	"mappings": "AAqCA,AAAA,aAAa,CAAC;EACZ,WAAW,EQkFJ,q90BAAW,GRjFnB"
+}

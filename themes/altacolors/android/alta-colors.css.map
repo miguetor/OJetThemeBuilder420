@@ -1,0 +1,19 @@
+{
+	"version": 3,
+	"file": "alta-colors.css",
+	"sources": [
+		"../../../src/themes/altacolors/android/alta-colors.scss",
+		"../../../src/scss/oj/alta-android/_oj.alta.android.variables.scss",
+		"../../../src/scss/oj/utilities/_oj.utilities.property.scss",
+		"../../../src/scss/oj/utilities/_oj.utilities.bidi.scss",
+		"../../../src/scss/oj/utilities/_oj.utilities.units.scss",
+		"../../../src/scss/oj/utilities/_oj.utilities.math.scss",
+		"../../../src/scss/oj/common/_oj.common.variables.scss",
+		"../../../src/scss/oj/utilities/_oj.utilities.urls.scss",
+		"../../../src/scss/oj/utilities/_oj.utilities.modules.scss",
+		"../../../src/scss/oj/utilities/_oj.utilities.theming.vars.scss",
+		"../../../src/scss/oj/utilities/_oj.utilities.json.scss"
+	],
+	"names": [],
+	"mappings": "AAsCA,AAAA,aAAa,CAAC;EACZ,WAAW,EUiFJ,w90BAAW,GVhFnB"
+}

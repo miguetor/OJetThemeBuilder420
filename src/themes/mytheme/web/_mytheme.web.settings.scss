@@ -74,13 +74,13 @@ $themeName:           mytheme !default;
 // these paths should be relative to the generated css file
 
 // path to images
-$imageDir: "../../../css/alta/4.2.0/web/images/" !default;
+$imageDir: "images/" !default;
 
 // path to (icon) fonts
 $fontDir:  "../../../css/alta/4.2.0/web/fonts/" !default;
 
 // path to common images (images shared across themes)
-$commonImageDir:  "../../../css/alta/4.2.0/common/images/" !default;
+$commonImageDir:  "../common/images/" !default;
 
 
 // DIRECTION
@@ -1924,10 +1924,10 @@ $commonImageDir:  "../../../css/alta/4.2.0/common/images/" !default;
 //$progressBarBorderColor:                 $border4Color !default;
 //$progressBarBorderRadius:                $mediumBorderRadius !default;
 //$progressBarBorderStyle:                 solid !default;
-$imageDir: "../../../css/alta/4.2.0/web/images/" !default;
+$imageDir: "images/" !default;
 //$progressBarIndeterminateOverlayOpacity: .2 !default;
 
-$commonImageDir:  "../../../css/alta/4.2.0/common/images/" !default;
+$commonImageDir:  "../common/images/" !default;
 //$progressCircleBgColor:                  $interaction2Color !default;
 
 // TRAIN
@@ -2440,7 +2440,7 @@ $commonImageDir:  "../../../css/alta/4.2.0/common/images/" !default;
 //sizing
 
 //minimum label width ensured during progressive truncation
-//$tabBarTruncatedLabelMinWidth:                      3rem !default; 
+//$tabBarTruncatedLabelMinWidth:                      3rem !default;
 // Not applicable to icon-only
 //$tabBarItemStartEndPadding:                           oj-px-to-rem(15px, $baseFontSize: 14px) !default;
 //$tabBarIconToTextPadding:                             oj-px-to-rem(10px, $baseFontSize: 14px) !default;
@@ -2903,4 +2903,3 @@ $commonImageDir:  "../../../css/alta/4.2.0/common/images/" !default;
 // check for vars that have been renamed but the old var name is defined,
 // if any are found an error will be thrown
 @include oj-theming-vars-renamed();
-

@@ -1,0 +1,19 @@
+{
+	"version": 3,
+	"file": "alta-colors.css",
+	"sources": [
+		"../../../src/themes/altacolors/web/alta-colors.scss",
+		"../../../src/scss/oj/alta/_oj.alta.variables.scss",
+		"../../../src/scss/oj/utilities/_oj.utilities.urls.scss",
+		"../../../src/scss/oj/utilities/_oj.utilities.math.scss",
+		"../../../src/scss/oj/utilities/_oj.utilities.units.scss",
+		"../../../src/scss/oj/common/_oj.common.variables.scss",
+		"../../../src/scss/oj/utilities/_oj.utilities.modules.scss",
+		"../../../src/scss/oj/utilities/_oj.utilities.theming.vars.scss",
+		"../../../src/themes/altacolors/common/_vars.scss",
+		"../../../src/scss/oj/utilities/_oj.utilities.json.scss",
+		"../../../src/themes/altacolors/common/_contrast.scss"
+	],
+	"names": [],
+	"mappings": "AUgQA,AAAA,0BAA0B,CAAC;EACzB,WAAW,EDzIJ,4iNAAW,GC6InB;;AFhOD,AAAA,aAAa,CAAC;EACZ,WAAW,ECkFJ,g90BAAW,GDjFnB"
+}
