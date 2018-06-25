@@ -1,0 +1,28 @@
+// COLLAPSIBLE
+
+/* inside accordion */
+.oj-accordion-collapsible > .oj-collapsible-header {
+  border-bottom-width: 0;
+  vertical-align: top;
+  line-height: 2em;
+  padding-top: 0;
+}
+
+/* icon accordion */
+html:not([dir="rtl"]) .oj-accordion-collapsible > .oj-collapsible-header > .oj-collapsible-header-icon {
+  margin: 0px 0px -2px 0px;
+}
+
+/* container */
+.oj-collapsible-header {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+/* icon */
+html:not([dir="rtl"]) .oj-collapsible-header a, html:not([dir="rtl"]) .oj-collapsible-header .oj-collapsible-header-icon {
+  margin: 0px 5px -2px 0px;
+  font-size: 18px;
+}

@@ -1,0 +1,18 @@
+{
+	"version": 3,
+	"file": "stealth-colors.css",
+	"sources": [
+		"../../../src/themes/stealth/ios/stealth-colors.scss",
+		"../../../src/themes/stealth/ios/_stealth.ios.settings.scss",
+		"../../../src/scss/oj/alta-ios/_oj.alta.ios.variables.scss",
+		"../../../src/scss/oj/utilities/_oj.utilities.units.scss",
+		"../../../src/scss/oj/utilities/_oj.utilities.math.scss",
+		"../../../src/scss/oj/common/_oj.common.variables.scss",
+		"../../../src/scss/oj/utilities/_oj.utilities.urls.scss",
+		"../../../src/scss/oj/utilities/_oj.utilities.modules.scss",
+		"../../../src/scss/oj/utilities/_oj.utilities.theming.vars.scss",
+		"../../../src/scss/oj/utilities/_oj.utilities.json.scss"
+	],
+	"names": [],
+	"mappings": "AAuCA,AAAA,aAAa,CAAC;EACZ,WAAW,ESgFJ,kg1BAAW,GT/EnB"
+}

@@ -83,7 +83,6 @@ node_modules/*
 web/*
 bower_components/*
 /nbproject/*
-/themes/*
 
 #leaving the scripts folder, so anyone can run it,in its personal server with grunt.
 #leaving src so anyone can update the folder.
@@ -107,4 +106,3 @@ Thumbs.db
 node_modules/*
 bower_components/*
 /nbproject/*
-/themes/*
