@@ -1,0 +1,31 @@
+<!--
+ Copyright (c) 2014, 2018, Oracle and/or its affiliates.
+ The Universal Permissive License (UPL), Version 1.0
+ -->
+
+<oj-popup id="tourPop" modality="modal" style="display:none"
+          auto-dismiss="none" data-bind="{attr: {style: 'width: 400px;  max-width: 95%;'}}">
+    <div id="popContent" style="margin-bottom:20px"
+           data-bind="ojModule: {name: stopModuleName,
+                                 params: {tourParams: tourParams}}" ></div>
+
+    <div class="oj-flex-bar">
+      <div class="oj-flex-bar-end">
+        <div>
+          <!-- ko if: showPrev() -->
+            <oj-button on-click="[[tourPrev]]">
+              <span slot='startIcon' class='oj-fwk-icon-caret-start oj-fwk-icon'></span>
+              <span>Back</span>
+            </oj-button>
+          <!-- /ko -->
+            <oj-button on-click="[[tourEnd]]">End Tour</oj-button>
+          <!-- ko if: showNext() -->
+            <oj-button on-click="[[tourNext]]">
+              <span slot='endIcon' class='oj-fwk-icon-caret-end oj-fwk-icon'></span>
+              <span>Next </span>
+            </oj-button>
+          <!-- /ko  -->
+        </div>
+     </div>
+    </div>
+</oj-popup>

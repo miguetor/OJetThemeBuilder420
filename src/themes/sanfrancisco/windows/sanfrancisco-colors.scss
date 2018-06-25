@@ -1,0 +1,44 @@
+// creates color classes for use in the left column of the Theme Builder page
+
+//IMPORT CUSTOM SETTINGS
+@import "sanfrancisco.windows.settings";
+$demoOracleLogoColor: light;
+
+@import "../../../scss/oj/alta-windows/oj.alta.windows.variables";
+
+// import functions used in this file
+@import "../../../scss/oj/utilities/oj.utilities.json";
+@import "../../../scss/oj/utilities/oj.utilities.theming.vars";
+
+// This class sends down a map of lists with variable info. 
+// The lists in turn contain maps that can be used 
+// with a knockout foreach to dispaly variable names and values.
+//
+// Map keys are 
+// 'palette', 'controls', 'layoutnav', 'forms', 'collections', 'visualizations'.
+//
+// On the client in the js to get the 'palette' list you could do this:
+//    self.themingVarMap = oj.ThemeUtils.parseJSONFromFontFamily("demo-var-map");
+//    self.paletteVars = self.themingVarMap['palette'];
+//
+// the paletteVars in turn looks something like this, 
+// note that the keys are 'name' and 'value'.
+//   [ 
+//    {name: "$interaction1Color", value: "#07ac02"},
+//    {name: "$interaction2Color", value: "#ebeced"},
+//        --- etc ---
+//   ]
+//
+// in the html you could do something like this to display info about palette vars:
+//    
+//    <table data-bind="foreach: paletteVars">
+//      <tr>
+//        <td data-bind="style: {backgroundColor: value}" style="width:30px"></td>
+//        <td data-bind="text: value" style="width:4.5em"></td>
+//        <td data-bind="text: name"></td>
+//      </tr>
+//    </table>
+.demo-var-map {
+  font-family: oj-json(oj-theming-colors-map());
+}
+

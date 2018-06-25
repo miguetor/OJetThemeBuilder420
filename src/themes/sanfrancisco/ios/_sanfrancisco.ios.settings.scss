@@ -1,0 +1,127 @@
+// custom variables for the san francisco theme
+// The "san francisco" theme uses the colors of a certain san francisco based sports team.
+//
+// In addition to changing colors various non-color customizations are made. For example here are a few changes:
+//  - buttons - customize default chroming
+//  - tabs - customize tabs to be rounded instead of square
+//  - navlist - for vertical navlist make the bgcolor strong
+//
+// NOTE: The demo themes have not been designed to meet
+// contrast ratio requirements and therefore may not accessible.
+
+
+
+
+$themeName:  sanfrancisco;
+
+// UNIVERSAL
+//----------------------------------
+
+// Universal Font & Text Styling
+//----------------------------------
+
+//font size
+$rootFontSize:    .875em;
+
+
+
+
+// Universal Background and Border Styling
+//----------------------------------
+
+$contrastBackground1Color: #000000; // black
+$interaction1Color: #F2552C; // bright orange
+$interaction3Color: #ffefeb; // lightest orange
+$interaction4Color: #ffcabd; // light orange
+$interaction6Color: #f5eadb; // light orange
+$background6Color:  #f8ead8; // light orange
+$iconColorHover:    #f69279; // medium orange
+$linkTextColor:     #8b2309; // darkest orange
+
+
+// same colors as alta-ios, but referred to below
+$background1Color:   #ffffff;
+$border3Color:       #c8c8c8;
+$border4Color:       #c8cfd5;
+$contrastTextColor:  #ffffff;
+
+// radius
+// show a more rounded look
+// and up the border radius variables
+$largeBorderRadius: 9px;
+$mediumBorderRadius: 7px;
+$smallBorderRadius:  4px;
+
+// BUTTONS
+//----------------------------------------------------------------
+
+
+// chroming option defaulting
+$buttonChromingOptionDefault: outlined;
+$buttonsetChromingOptionDefault: outlined;
+
+// FORMS
+//----------------------------------------------------------------
+$formLayoutLabelInlineAlign: end;
+$formLayoutFieldInlineAlign: start;
+
+$formControlBorderWidth:  1px;
+$formControlBorderRadius:  5px;
+$formControlBorderColor:  $border4Color;
+$formControlInputBorderColorFocus:  $interaction1Color;
+
+// controls the horizontal padding inside an input
+$formControlPaddingHorizontal: 10px;
+
+
+// RADIOSET and CHECKBOXSET
+//----------------------------------------------------------------
+// the default radio and checkbox images are blue,
+// replace them with images that are orange
+$radioCheckboxImageDir:  "images/";
+
+// TRAIN
+//----------------------------------------------------------------
+
+$trainLabelTextWrap:                     nowrap;
+
+$trainBgColorVisited:                    $background1Color;
+$trainBorderColorVisited:                $interaction1Color;
+$trainButtonTextColorVisited:            $trainBorderColorVisited;
+
+
+// NavigationList
+//----------------------------------------------------------------
+// For vertical navlist make the bgcolor strong
+
+$navigationListItemLabelColorSelected:            $contrastTextColor;
+$navigationListItemIconColorSelected:             $navigationListItemLabelColorSelected;
+$navigationListItemBgColorSelected:               $interaction1Color; // only applies to vertical navlist
+
+$navigationListItemBorderWidth:                   0;
+$navigationListIconOnlyItemBorderWidth:           0;
+
+$navigationListHorizontalItemLabelColorSelected:   $interaction1Color;
+$navigationListHorizontalItemIconColorSelected:    $navigationListHorizontalItemLabelColorSelected;
+
+// NavigationTabs
+//----------------------------------------------------------------
+$tabBarItemLabelColorSelected:    $navigationListItemLabelColorSelected;
+$tabBarItemIconColorSelected:     $navigationListItemIconColorSelected;
+
+// PROGRESS
+//----------------------------------------------------------------
+
+// The built in alta-ios overlay is blue, replace it with a
+// black and white version, and use opacity so the background color
+// shows through.
+$progressBarIndeterminateOverlayOpacity: .2;
+$progressBarIndeterminateOverlayImage:                "../../common/ios/images/animated-overlay.gif";
+
+$progressCircleIndeterminateOverlayImage:             "../../common/ios/images/spinner_full.gif";
+
+// Image urls
+//----------------------------------------------------------------
+$imageDir:               "../../../css/alta/4.2.0/ios/images/";
+$commonImageDir:         "../../../css/alta/4.2.0/common/images/";
+$fontDir:                "../../../css/alta/4.2.0/ios/fonts/";

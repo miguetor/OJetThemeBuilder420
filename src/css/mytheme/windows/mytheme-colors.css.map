@@ -1,0 +1,18 @@
+{
+	"version": 3,
+	"file": "mytheme-colors.css",
+	"sources": [
+		"../../../themes/mytheme/windows/mytheme-colors.scss",
+		"../../../themes/mytheme/windows/_mytheme.windows.settings.scss",
+		"../../../scss/oj/alta-windows/_oj.alta.windows.variables.scss",
+		"../../../scss/oj/utilities/_oj.utilities.units.scss",
+		"../../../scss/oj/utilities/_oj.utilities.math.scss",
+		"../../../scss/oj/common/_oj.common.variables.scss",
+		"../../../scss/oj/utilities/_oj.utilities.urls.scss",
+		"../../../scss/oj/utilities/_oj.utilities.modules.scss",
+		"../../../scss/oj/utilities/_oj.utilities.theming.vars.scss",
+		"../../../scss/oj/utilities/_oj.utilities.json.scss"
+	],
+	"names": [],
+	"mappings": "AAwCA,AAAA,aAAa,CAAC;EACZ,WAAW,ES+EJ,q90BAAW,GT9EnB"
+}

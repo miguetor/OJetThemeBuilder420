@@ -1,0 +1,40 @@
+<!--
+ Copyright (c) 2014, 2018, Oracle and/or its affiliates.
+ The Universal Permissive License (UPL), Version 1.0
+ -->
+                <h3 id="varHeader">
+                  <a data-bind="click: function(){$('#variablesPop').ojPopup('open', '#varHeader');}">
+                    <span role="img" title="click for variable info" class="oj-clickable-icon oj-fwk-icon oj-fwk-icon-help"></span>
+                  </a>
+                  <span>Color Variables</span>
+                </h3>
+                <oj-popup id="variablesPop" title="Variables"
+                          style="display:none"
+                          tail="simple" position.my.horizontal="left"  position.my.vertical="center"
+                          position.at.horizontal="right"  position.at.vertical="center"
+                          position.collision="flipfit"
+                          data-bind="{attr: {style: 'width: 400px;  max-width: 95%;'}}">
+                        <div data-bind="ojModule: {name: 'tour/stops/variables'}" ></div>
+                </oj-popup>
+                <div style="font-size:12px">
+                    <div>
+                      <div data-bind="foreach: variablesarray">
+                        <div data-bind="style: {display: id == 'palette' || $parent.labitem() == id || $parent.labitem() == 'all' ? 'block' : 'none'}">
+                          <oj-collapsible expanded="[[$parent.labitem() == 'all' || id != 'palette']]">
+                              <h4 slot="header" data-bind="text:title"></h4>
+                              <table style="width:100%">
+                                  <tbody data-bind="foreach: variables">
+                                      <tr data-bind="attr: { title: '$' + name }">
+                                          <td class="demo-var-color"
+                                               data-bind="css: {'site-color-null oj-text-tertiary-color': value==''},style: {backgroundColor: value}"></td>
+                                          <td class="demo-var-hex"
+                                               data-bind="text:value,css: {'site-hex-null': value==''}"></td>
+                                          <td data-bind="text: name"></td>
+                                      </tr>
+                                  </tbody>
+                              </table>
+                          </oj-collapsible>
+                        </div>
+                      </div>
+                    </div>
+                </div>

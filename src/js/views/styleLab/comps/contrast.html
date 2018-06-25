@@ -1,0 +1,47 @@
+<!--
+ Copyright (c) 2014, 2018, Oracle and/or its affiliates.
+ The Universal Permissive License (UPL), Version 1.0
+ -->
+
+  <h2>Contrast Testing</h2>
+  <div>
+    To comply with WCAG 2.0 you need an accessible luminosity contrast ratio between text and background colors
+    as specified in <a href="http://www.w3.org/TR/WCAG20/#visual-audio-contrast-contrast">WCAG 2.0 - Section 1.4.3 "Contrast"</a>.
+    This page helps you check which text/background color combinations meet that ratio.
+    One way to do this is to</div>
+    <ol>
+      <li>Install google's accessibility developer tools chrome extension: <a target="_blank" href="https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb?hl=en">Accessibility Developer Tools</a></li>
+      <li>Open this page in the Chrome browser, open the developer tools, and select "Audits".</li>
+      <li>On the 'Audits' tab select 'Accessibility' and press the 'Run' button. </li>
+      <li>Contrast warnings will look something like: "[Warning] Text elements should have a reasonable contrast ratio" </li>
+      <li>To the left of the warning text click the arrow to see the individual violations, clicking on each violation will highlight the dom with issues on the page.</li>
+    </ol>
+<h2>General Color Combinations</h2>
+<div data-bind="foreach: colors">
+  <div class="demo-contrast-box" style="width:220px">
+    <span data-bind="text: name"></span>
+    <div style="border: 1px solid black; padding: 5px;"
+         data-bind="style: {backgroundColor: value}">
+       <div data-bind="foreach: $parent.textcolors">
+          <div data-bind="text:name,style: {color: value},attr: {title: 'bgcolor=' + $parent.value }"></div>
+       </div>
+    </div>
+  </div>
+</div>
+<h3>Component Specific Combinations</h3>
+<div data-bind="foreach: compcolors" class="oj-flex">
+  <div class="demo-contrast-box" class="oj-flex-item">
+    <span data-bind="text: name"></span>
+    <div style="border: 1px solid black; padding: 2px;"
+         data-bind="style: {backgroundColor: value}">
+       <div data-bind="foreach: textcolors">
+          <div data-bind="text:name,style: {color: value},attr: {title: 'bgcolor=' + $parent.value }"></div>
+       </div>
+    </div>
+  </div>
+</div>
+  <h3 class="oj-padding-top-lg">Disabled Content</h3>
+  Note that <a href="http://www.w3.org/TR/WCAG20/#visual-audio-contrast-contrast">WCAG 2.0 - Section 1.4.3 "Contrast"</a>
+  says that text or images of text that are part
+  of an inactive user interface component have no contrast requirement.
+  Therefore we don't include disabled text colors like $textColorDisabled in the panels on this page.

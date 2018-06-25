@@ -1,0 +1,20 @@
+{
+	"version": 3,
+	"file": "green-colors.css",
+	"sources": [
+		"../../../themes/green/android/green-colors.scss",
+		"../../../themes/green/android/_green.android.settings.scss",
+		"../../../scss/oj/alta-android/_oj.alta.android.variables.scss",
+		"../../../scss/oj/utilities/_oj.utilities.property.scss",
+		"../../../scss/oj/utilities/_oj.utilities.bidi.scss",
+		"../../../scss/oj/utilities/_oj.utilities.units.scss",
+		"../../../scss/oj/utilities/_oj.utilities.math.scss",
+		"../../../scss/oj/common/_oj.common.variables.scss",
+		"../../../scss/oj/utilities/_oj.utilities.urls.scss",
+		"../../../scss/oj/utilities/_oj.utilities.modules.scss",
+		"../../../scss/oj/utilities/_oj.utilities.theming.vars.scss",
+		"../../../scss/oj/utilities/_oj.utilities.json.scss"
+	],
+	"names": [],
+	"mappings": "AAuCA,AAAA,aAAa,CAAC;EACZ,WAAW,EWgFJ,w90BAAW,GX/EnB"
+}

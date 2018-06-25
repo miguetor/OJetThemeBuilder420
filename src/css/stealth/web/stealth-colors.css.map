@@ -1,0 +1,20 @@
+{
+	"version": 3,
+	"file": "stealth-colors.css",
+	"sources": [
+		"../../../themes/stealth/web/stealth-colors.scss",
+		"../../../themes/stealth/web/_stealth.web.settings.scss",
+		"../../../scss/oj/alta/_oj.alta.variables.scss",
+		"../../../scss/oj/utilities/_oj.utilities.urls.scss",
+		"../../../scss/oj/utilities/_oj.utilities.math.scss",
+		"../../../scss/oj/utilities/_oj.utilities.units.scss",
+		"../../../scss/oj/common/_oj.common.variables.scss",
+		"../../../scss/oj/utilities/_oj.utilities.modules.scss",
+		"../../../scss/oj/utilities/_oj.utilities.theming.vars.scss",
+		"../../../themes/altacolors/common/_vars.scss",
+		"../../../scss/oj/utilities/_oj.utilities.json.scss",
+		"../../../themes/altacolors/common/_contrast.scss"
+	],
+	"names": [],
+	"mappings": "AWgQA,AAAA,0BAA0B,CAAC;EACzB,WAAW,EDzIJ,okNAAW,GC6InB;;AFhOD,AAAA,aAAa,CAAC;EACZ,WAAW,ECkFJ,y+0BAAW,GDjFnB"
+}

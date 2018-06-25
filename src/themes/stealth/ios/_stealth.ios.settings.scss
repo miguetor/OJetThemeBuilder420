@@ -1,0 +1,209 @@
+// NOTE: The demo themes have not been designed to meet
+// contrast ratio requirements and therefore may not be accessible.
+
+
+
+
+$themeName:  stealth;
+
+// Universal Font & Text Styling
+//----------------------------------
+
+// text colors for a dark background
+$textColor:             #d3e4f8;
+$primaryTextColor:      #ffffff;
+$secondaryTextColor:    darken($textColor, 3%);
+$tertiaryTextColor:     darken($textColor, 6%);
+$formControlLabelColor: #b8d4f4;
+$headerTextColor:       $textColor;
+$contrastTextColor:     #333333;
+$textColorDisabled:     #9e9e9e;
+
+// links
+$linkTextColor:         #FFDCA9;
+
+
+$iconColor:         $tertiaryTextColor;
+$iconColorDefault:  $textColor;
+$iconColorHover:    #ffc87a;
+
+
+// Universal Background and Border Styling
+//----------------------------------
+
+// background colors
+$background1Color: #475B72;
+$background2Color: lighten($background1Color, 3%);
+$background3Color: lighten($background1Color, 2%);
+$background4Color: lighten($background1Color, 5%);
+$background5Color: lighten($background1Color, 3%);
+$background6Color: lighten($background1Color, 9%);
+
+$contrastBackground1Color: #eeeeee;
+
+// border colors
+$border1Color: #d6dfe6;
+$border6Color: $border1Color;
+
+
+// Universal Interaction State Colors
+//----------------------------------
+$interaction1Color: #FFE3BA;
+$interaction2Color: #6C7C8E;
+$interaction3Color: lighten($background1Color, 3%);
+$interaction4Color: lighten($background1Color, 5%);
+$interaction5Color: lighten($background1Color, 5%);
+$interaction6Color: lighten($background1Color, 10%);
+$interaction7Color: lighten($background1Color, 20%);
+
+
+// shadow
+//----------------------------------
+$boxShadowColor: #ffffff;
+
+// BODY
+//----------------------------------------------------------------
+$bodyBgImage: none;
+
+
+// WINDOW
+//----------------------------------------------------------------
+$windowBorderColor: #c3d0df;
+$windowBgColor:     $background1Color;
+
+
+// APP LAYOUT - WEB
+//----------------------------------------------------------------
+$appLayoutWebHeaderBoxShadow: 0 2px 2px transparentize($boxShadowColor, .8);
+
+// HEADERS
+//----------------------------------------------------------------
+$headerBgImage: none;
+
+
+// PANEL
+//----------------------------------------------------------------
+$panelBorderColorSaturationAdjustment: -5%;
+$panelBorderColorLightnessAdjustment: 15%;
+
+ $panel1BgColor:     #374758;
+// $panel1BorderColor: $border1Color;
+
+
+$panel2BgColor:     #124068;
+$panel2BorderColor: adjust-color($panel2BgColor,
+                                 $lightness: $panelBorderColorLightnessAdjustment,
+                                 $saturation: $panelBorderColorSaturationAdjustment);
+
+
+$panel3BgColor:     #763405;
+$panel3BorderColor: adjust-color($panel3BgColor,
+                                 $lightness: $panelBorderColorLightnessAdjustment,
+                                 $saturation: $panelBorderColorSaturationAdjustment);
+
+$panel4BgColor:     #6b0b00;
+$panel4BorderColor: adjust-color($panel4BgColor,
+                                 $lightness: $panelBorderColorLightnessAdjustment,
+                                 $saturation: $panelBorderColorSaturationAdjustment);
+
+
+$panel5BgColor:     #510458;
+$panel5BorderColor: adjust-color($panel5BgColor,
+                                 $lightness: $panelBorderColorLightnessAdjustment,
+                                 $saturation: $panelBorderColorSaturationAdjustment);
+
+
+
+
+// BUTTONS
+//----------------------------------
+
+
+// default
+$buttonBorderColor:       #8DB2D5;
+$buttonBgColor:           #CCE2F6;
+$buttonTextColor:         $contrastTextColor;
+$buttonIconColor:         $buttonTextColor;
+$buttonBgImage:           linear-gradient(to bottom, #CCE2F6 0%, #B1D2F2 100%);
+$buttonTextShadow:        0 1px 0 white;
+$buttonBoxShadow:         inset 0 1px 0 #F4F9FD;
+
+
+// hover
+$buttonBgColorHover:      #dbdfe1;
+$buttonTextColorHover:    $contrastTextColor;
+$buttonIconColorHover:    $buttonTextColorHover;
+$buttonBgImageHover:      linear-gradient(to bottom, #FFE4A8 0%, #FFD475 100%);
+
+// active
+$buttonBgColorActive:     #8DB2D5;
+
+// disabled
+$buttonBgColorDisabled:   #E5E5E5;
+
+// half chrome
+$buttonHalfChromeTextColor: $linkTextColor;
+
+// MESSAGES
+$messageInlineBgColorError: $background2Color;
+$messageInlineBgColorWarning: $background4Color;
+$messageInlineBgColorInfo: $background6Color;
+$messageInlineBgColorConfirmation: $background6Color;
+
+// SWITCH
+//----------------------------------------------------------------
+$switchTrackBgColor: $background2Color;
+$switchTrackBorderColor: lighten($switchTrackBgColor, 20%);
+$switchThumbBorderColor: lighten($background1Color, 20%);
+
+$switchThumbBgColorHover:                $background6Color;
+$switchThumbBorderColorHover:            darken($switchThumbBgColorHover, 5%);
+
+$switchTrackBgColorReadonly:             $background2Color;
+$switchTrackBorderColorReadonly:         $contrastBackground1Color;
+
+// NAVIGATIONLIST
+//----------------------------------------------------------------
+$navigationListHorizontalItemLabelColorDefault: $textColor;
+$navigationListHorizontalItemIconColorDefault:  $textColor;
+
+$navigationListItemLabelColorDefault:           $textColor;
+$navigationListItemIconColorDefault:            $textColor;
+
+// NAVIGATIONTABS
+//----------------------------------------------------------------
+
+$tabBarItemContrastBgColorSelected:           #262628;
+$tabBarHorizontalItemContrastBgColorSelected: #262628;
+
+// TRAIN
+//----------------------------------------------------------------
+$trainLabelColorVisited: $textColor;
+
+
+// PROGRESS
+//----------------------------------------------------------------
+$progressBarIndeterminateOverlayOpacity: .3;
+$progressBarIndeterminateOverlayImage:                "../../common/ios/images/animated-overlay.gif";
+
+$progressCircleIndeterminateOverlayImage:             "../../common/ios/images/spinner_full.gif";
+
+// RADIOSET and CHECKBOXSET
+//----------------------------------------------------------------
+// the default radio and checkbox images are blue,
+// replace them with images that are visible in stealth theme
+$radioCheckboxImageDir:  "images/";
+
+
+// DATA GRID AND TABLE
+//----------------------------------------------------------------
+
+$dataGridBgColor:                        lighten($background1Color, 5%);
+$dataGridHeaderBgColor:                  darken($dataGridBgColor, 3%);
+// Headers - Selected
+$dataGridHeaderBgColorSelected:          lighten($dataGridHeaderBgColor, 15%);
+
+
+$imageDir:               "../../../css/alta/4.2.0/ios/images/";
+$commonImageDir:         "../../../css/alta/4.2.0/common/images/";
+$fontDir:                "../../../css/alta/4.2.0/ios/fonts/";

@@ -1,0 +1,59 @@
+// custom variables for the green theme
+// Green is an example of a theme where the dominant color has been changed from blue to green.
+// NOTE: The demo themes have not been designed to meet
+// contrast ratio requirements and therefore may not accessible.
+
+
+$themeName:  green;
+
+
+// UNIVERSAL
+//----------------------------------
+
+// Universal Font & Text Styling
+//----------------------------------
+
+
+// links
+$linkTextColor:   #418F05;
+
+
+// Universal Interaction State Colors
+//----------------------------------
+$interaction1Color: #07ac02;
+$interaction3Color: #e4ecda;
+$interaction4Color: darken($interaction3Color, 5%);
+$interaction6Color: #e0f1e6;
+
+
+// Icon Colors
+//----------------------------------
+$iconColorHover:    adjust-color($interaction1Color, $lightness: 10%, $saturation: -10);
+
+
+// drag and drop
+//----------------------------------
+$dropTarget1Color: #dbfae4;
+
+
+
+// PULL TO REFRESH
+//----------------------------------------------------------------
+// the default pull to refresh images are blue,
+// replace them with images that are a neutral color
+$pullToRefreshImageDir: "../../common/ios/images/";
+
+// RADIOSET and CHECKBOXSET
+//----------------------------------------------------------------
+// the default radio and checkbox images are blue,
+// replace them with images that are green
+$radioCheckboxImageDir:  "images/";
+
+// PROGRESS
+//-----------------------------------------------------------------------------
+$progressCircleIndeterminateOverlayImage:             "../../common/web/images/spinner_full.gif";
+
+
+$imageDir:               "../../../css/alta/4.2.0/web/images/";
+$commonImageDir:         "../../../css/alta/4.2.0/common/images/";
+$fontDir:                "../../../css/alta/4.2.0/web/fonts/";

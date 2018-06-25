@@ -1,0 +1,72 @@
+@import "../../../scss/oj/utilities/oj.utilities.urls";
+@import "../../../scss/oj/utilities/oj.utilities.math";
+
+// NOTE: The demo themes have not been designed to meet 
+// contrast ratio requirements and therefore may not be accessible.
+
+
+$themeName:  projector;
+
+$imageDir:               "../../../css/alta/4.2.0/web/images/";
+$commonImageDir:         "../../../css/alta/4.2.0/common/images/";
+$fontDir:                "../../../css/alta/4.2.0/web/fonts/";
+
+// This is the variable file for the Projector Theme look and feel. It is meant to be a modification of the Alta base theme.
+
+// background colors
+//----------------------------------
+$background3Color: #f6f7f8;
+
+
+// text colors
+//----------------------------------
+$textColor:             #252525;                                
+$primaryTextColor:      #585858; 
+$secondaryTextColor:    #494949;
+$tertiaryTextColor:     #000000;
+$formControlLabelColor: #414141;   
+$headerTextColor:       #151515;    
+$textColorDisabled:     #494949; 
+
+
+// PANEL
+//----------------------------------------------------------------
+
+// panel defaults:
+$panelBorderColor: #b6b6b6;
+
+
+// HEADERS
+//----------------------------------------------------------------
+// the background variables below are for a header "container", 
+// like the title bar of a dialog or an accordion header
+$headerBgColor:         #f0f0f0;  
+
+
+// BUTTONS 
+//----------------------------------------------------------------
+
+// button states
+//----------------------------------
+$buttonBorderColor:               #adb6be;
+
+// hover
+$buttonBorderColorHover:          $buttonBorderColor;
+
+
+// DVT 
+//----------------------------------------------------------------
+// attribute group colors
+//----------------------------------
+$dvtCategory1Color: #0085d9;
+$dvtCategory2Color: #3ced6f;
+$dvtCategory3Color: #fad55c;
+$dvtCategory4Color: #ff5b35;
+$dvtCategory5Color: #8561c8;
+$dvtCategory6Color: #49feff;
+$dvtCategory7Color: #ffb54d;
+$dvtCategory8Color: #e371b2;
+$dvtCategory9Color: #37c3ff;
+$dvtCategory10Color: #c2f800;
+$dvtCategory11Color: #c22fe8;
+$dvtCategory12Color: #f7f37b;

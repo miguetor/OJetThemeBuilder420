@@ -1,0 +1,20 @@
+{
+	"version": 3,
+	"file": "mytheme-colors.css",
+	"sources": [
+		"../../../themes/mytheme/android/mytheme-colors.scss",
+		"../../../themes/mytheme/android/_mytheme.android.settings.scss",
+		"../../../scss/oj/alta-android/_oj.alta.android.variables.scss",
+		"../../../scss/oj/utilities/_oj.utilities.property.scss",
+		"../../../scss/oj/utilities/_oj.utilities.bidi.scss",
+		"../../../scss/oj/utilities/_oj.utilities.units.scss",
+		"../../../scss/oj/utilities/_oj.utilities.math.scss",
+		"../../../scss/oj/common/_oj.common.variables.scss",
+		"../../../scss/oj/utilities/_oj.utilities.urls.scss",
+		"../../../scss/oj/utilities/_oj.utilities.modules.scss",
+		"../../../scss/oj/utilities/_oj.utilities.theming.vars.scss",
+		"../../../scss/oj/utilities/_oj.utilities.json.scss"
+	],
+	"names": [],
+	"mappings": "AAwCA,AAAA,aAAa,CAAC;EACZ,WAAW,EW+EJ,w90BAAW,GX9EnB"
+}

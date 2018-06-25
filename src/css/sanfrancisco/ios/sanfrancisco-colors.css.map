@@ -1,0 +1,18 @@
+{
+	"version": 3,
+	"file": "sanfrancisco-colors.css",
+	"sources": [
+		"../../../themes/sanfrancisco/ios/sanfrancisco-colors.scss",
+		"../../../themes/sanfrancisco/ios/_sanfrancisco.ios.settings.scss",
+		"../../../scss/oj/alta-ios/_oj.alta.ios.variables.scss",
+		"../../../scss/oj/utilities/_oj.utilities.units.scss",
+		"../../../scss/oj/utilities/_oj.utilities.math.scss",
+		"../../../scss/oj/common/_oj.common.variables.scss",
+		"../../../scss/oj/utilities/_oj.utilities.urls.scss",
+		"../../../scss/oj/utilities/_oj.utilities.modules.scss",
+		"../../../scss/oj/utilities/_oj.utilities.theming.vars.scss",
+		"../../../scss/oj/utilities/_oj.utilities.json.scss"
+	],
+	"names": [],
+	"mappings": "AA0CA,AAAA,aAAa,CAAC;EACZ,WAAW,ES6EJ,i90BAAW,GT5EnB"
+}
