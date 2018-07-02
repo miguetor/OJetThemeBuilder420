@@ -1,0 +1,482 @@
+$gradientGeneration: off;
+
+@import "../../../../scss/oj/utilities/oj.utilities.button";
+@import "../../../../scss/oj/utilities/oj.utilities.prefix";
+@import "../../../../scss/oj/utilities/oj.utilities.boxshadow";
+
+// NOTE: demo colors may not
+// pass contrast ratio requirements
+// http://www.w3.org/TR/WCAG20-TECHS/G18.html
+
+// Main Colors
+$primaryColor:   #FF4433;
+$accentColor:    #00A8FF;
+$neutralColor:   #F8F8F8;
+$darkColor:      #333333;
+
+$successColor:   #2ECC71;
+$errorColor:     #E82018;
+$warningColor:   #FBC531;
+$infoColor:      #1D8BF1;
+
+// Primary Palette
+$primaryLight1: lighten($primaryColor, 5%);
+$primaryLight2: lighten($primaryColor, 10%);
+$primaryLight3: lighten($primaryColor, 15%);
+$primaryLight4: lighten($primaryColor, 20%);
+$primaryLight5: lighten($primaryColor, 25%);
+$primaryDark1:  darken($primaryColor, 15%);
+$primaryDark2:  darken($primaryColor, 20%);
+
+// Accent Palette
+$accentLight1: lighten($accentColor, 8%);
+$accentLight2: lighten($accentColor, 16%);
+$accentLight3: lighten($accentColor, 24%);
+$accentLight4: lighten($accentColor, 32%);
+$accentLight5: lighten($accentColor, 40%);
+$accentDark1:  darken($accentColor, 8%);
+$accentDark2:  darken($accentColor, 16%);
+
+// Success Palette
+$successLight1: lighten($successColor, 8%);
+$successLight2: lighten($successColor, 16%);
+$successLight3: lighten($successColor, 24%);
+$successLight4: lighten($successColor, 32%);
+$successLight5: lighten($successColor, 36%);
+$successDark1:  darken($successColor, 8%);
+$successDark2:  darken($successColor, 16%);
+
+.oj-button-primary {
+  @include oj-button-state-overrides (
+    // default
+    $altButtonTextColor:                        white,
+    $altButtonBgColor:                          $primaryColor,
+    $altButtonIconColor:                        white,
+    $altButtonBorderColor:                      $primaryColor $primaryColor $primaryDark1 $primaryColor,
+    $altButtonBgImage:                          none,
+    $altButtonTextShadow:                       none,
+    $altButtonBoxShadow:                        none,
+
+    // hover
+    $altButtonTextColorHover:                   white,
+    $altButtonBgColorHover:                     $primaryLight1,
+    $altButtonIconColorHover:                   white,
+    $altButtonBorderColorHover:                 $primaryLight1 $primaryLight1 $primaryColor $primaryLight1,
+    $altButtonBgImageHover:                     none,
+    $altButtonTextShadowHover:                  none,
+    $altButtonBoxShadowHover:                   none,
+
+    // active
+    $altButtonTextColorActive:                  white,
+    $altButtonBgColorActive:                    $primaryDark1,
+    $altButtonIconColorActive:                  white,
+    $altButtonBorderColorActive:                $primaryDark1,
+    $altButtonBgImageActive:                    none,
+    $altButtonTextShadowActive:                 none,
+    $altButtonBoxShadowActive:                  none,
+    $altButtonOpacityActive:                    none,
+
+    // selected
+    $altButtonBgColorSelected:                  $primaryDark1,
+    $altButtonTextColorSelected:                white,
+    $altButtonIconColorSelected:                white,
+    $altButtonBorderColorSelected:              $primaryDark1,
+    $altButtonBgImageSelected:                  none,
+    $altButtonTextShadowSelected:               none,
+    $altButtonBoxShadowSelected:                none,
+
+    // selected and hovered
+    $altButtonBgColorSelectedHover:             $primaryDark1,
+    $altButtonTextColorSelectedHover:           white,
+    $altButtonIconColorSelectedHover:           white,
+    $altButtonBorderColorSelectedHover:         $primaryDark1,
+    $altButtonBgImageSelectedHover:             none,
+    $altButtonTextShadowSelectedHover:          none,
+    $altButtonBoxShadowSelectedHover:           none,
+
+    // disabled
+    $altButtonBgColorDisabled:                  $primaryLight4,
+    $altButtonTextColorDisabled:                white,
+    $altButtonIconColorDisabled:                white,
+    $altButtonBorderColorDisabled:              $primaryLight4,
+    $altButtonOpacityDisabled:                  none,
+
+    // disabled and selected
+    $altButtonTextColorSelectedDisabled:        white,
+    $altButtonIconColorSelectedDisabled:        white,
+    $altButtonBgColorSelectedDisabled:          $primaryLight3,
+    $altButtonBorderColorSelectedDisabled:      $primaryLight3,
+
+    // half chrome default
+    $altButtonHalfChromeTextColor:              $primaryColor,
+    $altButtonHalfChromeIconColor:              $primaryColor,
+
+    // half chrome hover
+    $altButtonHalfChromeTextColorHover:         $primaryLight1,
+    $altButtonHalfChromeIconColorHover:         $primaryLight1,
+    $altButtonHalfChromeBgColorHover:           transparent,
+    $altButtonHalfChromeBorderColorHover:       transparent,
+
+    // half chrome active
+    $altButtonHalfChromeTextColorActive:        $primaryDark1,
+    $altButtonHalfChromeIconColorActive:        $primaryDark1,
+    $altButtonHalfChromeBgColorActive:          transparent,
+    $altButtonHalfChromeBorderColorActive:      transparent,
+    $altButtonHalfChromeOpacityActive:          none,
+
+    // half chrome selected
+    $altButtonHalfChromeTextColorSelected:      white,
+    $altButtonHalfChromeIconColorSelected:      white,
+    $altButtonHalfChromeBgColorSelected:        $primaryLight1,
+    $altButtonHalfChromeBorderColorSelected:    $primaryLight1,
+
+    // half chrome selected and hovered
+    $altButtonHalfChromeTextColorSelectedHover:   white,
+    $altButtonHalfChromeIconColorSelectedHover:   white,
+    $altButtonHalfChromeBgColorSelectedHover:     $primaryLight1,
+    $altButtonHalfChromeBorderColorSelectedHover: $primaryLight1,
+
+    // half chrome disabled
+    $altButtonHalfChromeTextColorDisabled:      $primaryLight4,
+    $altButtonHalfChromeIconColorDisabled:      $primaryLight4,
+    $altButtonHalfChromeOpacityDisabled:        none,
+
+    // half chrome disabled and selected
+    $altButtonHalfChromeTextColorSelectedDisabled:   white,
+    $altButtonHalfChromeIconColorSelectedDisabled:   white,
+    $altButtonHalfChromeBgColorSelectedDisabled:     $primaryLight3,
+    $altButtonHalfChromeBorderColorSelectedDisabled: $primaryLight3,
+
+    // outlined chrome default
+    $altButtonOutlinedChromeTextColor:              $primaryColor,
+    $altButtonOutlinedChromeIconColor:              $primaryColor,
+    $altButtonOutlinedChromeBorderColor:            $primaryLight4,
+
+    // outlined chrome hover
+    $altButtonOutlinedChromeTextColorHover:         white,
+    $altButtonOutlinedChromeIconColorHover:         white,
+    $altButtonOutlinedChromeBgColorHover:           $primaryLight4,
+    $altButtonOutlinedChromeBorderColorHover:       $primaryLight4,
+
+    // outlined chrome active
+    $altButtonOutlinedChromeTextColorActive:        white,
+    $altButtonOutlinedChromeIconColorActive:        white,
+    $altButtonOutlinedChromeBgColorActive:          $primaryDark1,
+    $altButtonOutlinedChromeBorderColorActive:      $primaryDark1,
+    $altButtonOutlinedChromeOpacityActive:          none,
+
+    // outlined chrome selected
+    $altButtonOutlinedChromeTextColorSelected:      white,
+    $altButtonOutlinedChromeIconColorSelected:      white,
+    $altButtonOutlinedChromeBgColorSelected:        $primaryColor,
+    $altButtonOutlinedChromeBorderColorSelected:    $primaryColor,
+
+    // outlined chrome selected and hovered
+    $altButtonOutlinedChromeTextColorSelectedHover:   white,
+    $altButtonOutlinedChromeIconColorSelectedHover:   white,
+    $altButtonOutlinedChromeBgColorSelectedHover:     $primaryColor,
+    $altButtonOutlinedChromeBorderColorSelectedHover: $primaryColor,
+
+    // outlined chrome disabled
+    $altButtonOutlinedChromeTextColorDisabled:      $primaryLight4,
+    $altButtonOutlinedChromeIconColorDisabled:      $primaryLight4,
+    $altButtonOutlinedChromeOpacityDisabled:        none,
+    $altButtonOutlinedChromeBorderColorDisabled:    $primaryLight4,
+
+    // outlined chrome disabled and selected
+    $altButtonOutlinedChromeTextColorSelectedDisabled:   white,
+    $altButtonOutlinedChromeIconColorSelectedDisabled:   white,
+    $altButtonOutlinedChromeBgColorSelectedDisabled:     $primaryLight3,
+    $altButtonOutlinedChromeBorderColorSelectedDisabled: $primaryLight3
+  );
+}
+
+.oj-button-accent {
+  @include oj-button-state-overrides (
+    // default
+    $altButtonTextColor:                        white,
+    $altButtonBgColor:                          $accentColor,
+    $altButtonIconColor:                        white,
+    $altButtonBorderColor:                      $accentColor $accentColor $accentDark1 $accentColor,
+    $altButtonBgImage:                          none,
+    $altButtonTextShadow:                       none,
+    $altButtonBoxShadow:                        none,
+
+    // hover
+    $altButtonTextColorHover:                   white,
+    $altButtonBgColorHover:                     $accentLight1,
+    $altButtonIconColorHover:                   white,
+    $altButtonBorderColorHover:                 $accentLight1 $accentLight1 $accentColor $accentLight1,
+    $altButtonBgImageHover:                     none,
+    $altButtonTextShadowHover:                  none,
+    $altButtonBoxShadowHover:                   none,
+
+    // active
+    $altButtonTextColorActive:                  white,
+    $altButtonBgColorActive:                    $accentDark1,
+    $altButtonIconColorActive:                  white,
+    $altButtonBorderColorActive:                $accentDark1,
+    $altButtonBgImageActive:                    none,
+    $altButtonTextShadowActive:                 none,
+    $altButtonBoxShadowActive:                  none,
+    $altButtonOpacityActive:                    none,
+
+    // selected
+    $altButtonBgColorSelected:                  $accentDark1,
+    $altButtonTextColorSelected:                white,
+    $altButtonIconColorSelected:                white,
+    $altButtonBorderColorSelected:              $accentDark1,
+    $altButtonBgImageSelected:                  none,
+    $altButtonTextShadowSelected:               none,
+    $altButtonBoxShadowSelected:                none,
+
+    // selected and hovered
+    $altButtonBgColorSelectedHover:             $accentDark1,
+    $altButtonTextColorSelectedHover:           white,
+    $altButtonIconColorSelectedHover:           white,
+    $altButtonBorderColorSelectedHover:         $accentDark1,
+    $altButtonBgImageSelectedHover:             none,
+    $altButtonTextShadowSelectedHover:          none,
+    $altButtonBoxShadowSelectedHover:           none,
+
+    // disabled
+    $altButtonBgColorDisabled:                  $accentLight5,
+    $altButtonTextColorDisabled:                white,
+    $altButtonIconColorDisabled:                white,
+    $altButtonBorderColorDisabled:              $accentLight5,
+    $altButtonOpacityDisabled:                  none,
+
+    // disabled and selected
+    $altButtonTextColorSelectedDisabled:        white,
+    $altButtonIconColorSelectedDisabled:        white,
+    $altButtonBgColorSelectedDisabled:          $accentLight4,
+    $altButtonBorderColorSelectedDisabled:      $accentLight4,
+
+    // half chrome default
+    $altButtonHalfChromeTextColor:              $accentColor,
+    $altButtonHalfChromeIconColor:              $accentColor,
+
+    // half chrome hover
+    $altButtonHalfChromeTextColorHover:         $accentLight1,
+    $altButtonHalfChromeIconColorHover:         $accentLight1,
+    $altButtonHalfChromeBgColorHover:           transparent,
+    $altButtonHalfChromeBorderColorHover:       transparent,
+
+    // half chrome active
+    $altButtonHalfChromeTextColorActive:        $accentDark1,
+    $altButtonHalfChromeIconColorActive:        $accentDark1,
+    $altButtonHalfChromeBgColorActive:          transparent,
+    $altButtonHalfChromeBorderColorActive:      transparent,
+    $altButtonHalfChromeOpacityActive:          none,
+
+    // half chrome selected
+    $altButtonHalfChromeTextColorSelected:      white,
+    $altButtonHalfChromeIconColorSelected:      white,
+    $altButtonHalfChromeBgColorSelected:        $accentLight1,
+    $altButtonHalfChromeBorderColorSelected:    $accentLight1,
+
+    // half chrome selected and hovered
+    $altButtonHalfChromeTextColorSelectedHover:   white,
+    $altButtonHalfChromeIconColorSelectedHover:   white,
+    $altButtonHalfChromeBgColorSelectedHover:     $accentLight1,
+    $altButtonHalfChromeBorderColorSelectedHover: $accentLight1,
+
+    // half chrome disabled
+    $altButtonHalfChromeTextColorDisabled:      $accentLight5,
+    $altButtonHalfChromeIconColorDisabled:      $accentLight5,
+    $altButtonHalfChromeOpacityDisabled:        none,
+
+    // half chrome disabled and selected
+    $altButtonHalfChromeTextColorSelectedDisabled:   white,
+    $altButtonHalfChromeIconColorSelectedDisabled:   white,
+    $altButtonHalfChromeBgColorSelectedDisabled:     $accentLight5,
+    $altButtonHalfChromeBorderColorSelectedDisabled: $accentLight5,
+
+    // outlined chrome default
+    $altButtonOutlinedChromeTextColor:              $accentColor,
+    $altButtonOutlinedChromeIconColor:              $accentColor,
+    $altButtonOutlinedChromeBorderColor:            $accentLight5,
+
+    // outlined chrome hover
+    $altButtonOutlinedChromeTextColorHover:         white,
+    $altButtonOutlinedChromeIconColorHover:         white,
+    $altButtonOutlinedChromeBgColorHover:           $accentLight5,
+    $altButtonOutlinedChromeBorderColorHover:       $accentLight5,
+
+    // outlined chrome active
+    $altButtonOutlinedChromeTextColorActive:        white,
+    $altButtonOutlinedChromeIconColorActive:        white,
+    $altButtonOutlinedChromeBgColorActive:          $accentDark1,
+    $altButtonOutlinedChromeBorderColorActive:      $accentDark1,
+    $altButtonOutlinedChromeOpacityActive:          none,
+
+    // outlined chrome selected
+    $altButtonOutlinedChromeTextColorSelected:      white,
+    $altButtonOutlinedChromeIconColorSelected:      white,
+    $altButtonOutlinedChromeBgColorSelected:        $accentColor,
+    $altButtonOutlinedChromeBorderColorSelected:    $accentColor,
+
+    // outlined chrome selected and hovered
+    $altButtonOutlinedChromeTextColorSelectedHover:   white,
+    $altButtonOutlinedChromeIconColorSelectedHover:   white,
+    $altButtonOutlinedChromeBgColorSelectedHover:     $accentColor,
+    $altButtonOutlinedChromeBorderColorSelectedHover: $accentColor,
+
+    // outlined chrome disabled
+    $altButtonOutlinedChromeTextColorDisabled:      $accentLight5,
+    $altButtonOutlinedChromeIconColorDisabled:      $accentLight5,
+    $altButtonOutlinedChromeOpacityDisabled:        none,
+    $altButtonOutlinedChromeBorderColorDisabled:    $accentLight5,
+
+    // outlined chrome disabled and selected
+    $altButtonOutlinedChromeTextColorSelectedDisabled:   white,
+    $altButtonOutlinedChromeIconColorSelectedDisabled:   white,
+    $altButtonOutlinedChromeBgColorSelectedDisabled:     $accentLight5,
+    $altButtonOutlinedChromeBorderColorSelectedDisabled: $accentLight5
+  );
+}
+
+.oj-button-confirm {
+  @include oj-button-state-overrides (
+    // default
+    $altButtonTextColor:                        white,
+    $altButtonBgColor:                          $successColor,
+    $altButtonIconColor:                        white,
+    $altButtonBorderColor:                      $successColor $successColor $successDark1 $successColor,
+    $altButtonBgImage:                          none,
+    $altButtonTextShadow:                       none,
+    $altButtonBoxShadow:                        none,
+
+    // hover
+    $altButtonTextColorHover:                   white,
+    $altButtonBgColorHover:                     $successLight1,
+    $altButtonIconColorHover:                   white,
+    $altButtonBorderColorHover:                 $successLight1 $successLight1 $successColor $successLight1,
+    $altButtonBgImageHover:                     none,
+    $altButtonTextShadowHover:                  none,
+    $altButtonBoxShadowHover:                   none,
+
+    // active
+    $altButtonTextColorActive:                  white,
+    $altButtonBgColorActive:                    $successDark1,
+    $altButtonIconColorActive:                  white,
+    $altButtonBorderColorActive:                $successDark1,
+    $altButtonBgImageActive:                    none,
+    $altButtonTextShadowActive:                 none,
+    $altButtonBoxShadowActive:                  none,
+    $altButtonOpacityActive:                    none,
+
+    // selected
+    $altButtonBgColorSelected:                  $successDark1,
+    $altButtonTextColorSelected:                white,
+    $altButtonIconColorSelected:                white,
+    $altButtonBorderColorSelected:              $successDark1,
+    $altButtonBgImageSelected:                  none,
+    $altButtonTextShadowSelected:               none,
+    $altButtonBoxShadowSelected:                none,
+
+    // selected and hovered
+    $altButtonBgColorSelectedHover:             $successDark1,
+    $altButtonTextColorSelectedHover:           white,
+    $altButtonIconColorSelectedHover:           white,
+    $altButtonBorderColorSelectedHover:         $successDark1,
+    $altButtonBgImageSelectedHover:             none,
+    $altButtonTextShadowSelectedHover:          none,
+    $altButtonBoxShadowSelectedHover:           none,
+
+    // disabled
+    $altButtonBgColorDisabled:                  $successLight3,
+    $altButtonTextColorDisabled:                white,
+    $altButtonIconColorDisabled:                white,
+    $altButtonBorderColorDisabled:              $successLight3,
+    $altButtonOpacityDisabled:                  none,
+
+    // disabled and selected
+    $altButtonTextColorSelectedDisabled:        white,
+    $altButtonIconColorSelectedDisabled:        white,
+    $altButtonBgColorSelectedDisabled:          $successLight2,
+    $altButtonBorderColorSelectedDisabled:      $successLight2,
+
+    // half chrome default
+    $altButtonHalfChromeTextColor:              $successColor,
+    $altButtonHalfChromeIconColor:              $successColor,
+
+    // half chrome hover
+    $altButtonHalfChromeTextColorHover:         $successLight1,
+    $altButtonHalfChromeIconColorHover:         $successLight1,
+    $altButtonHalfChromeBgColorHover:           transparent,
+    $altButtonHalfChromeBorderColorHover:       transparent,
+
+    // half chrome active
+    $altButtonHalfChromeTextColorActive:        $successDark1,
+    $altButtonHalfChromeIconColorActive:        $successDark1,
+    $altButtonHalfChromeBgColorActive:          transparent,
+    $altButtonHalfChromeBorderColorActive:      transparent,
+    $altButtonHalfChromeOpacityActive:          none,
+
+    // half chrome selected
+    $altButtonHalfChromeTextColorSelected:      white,
+    $altButtonHalfChromeIconColorSelected:      white,
+    $altButtonHalfChromeBgColorSelected:        $successLight1,
+    $altButtonHalfChromeBorderColorSelected:    $successLight1,
+
+    // half chrome selected and hovered
+    $altButtonHalfChromeTextColorSelectedHover:   white,
+    $altButtonHalfChromeIconColorSelectedHover:   white,
+    $altButtonHalfChromeBgColorSelectedHover:     $successLight1,
+    $altButtonHalfChromeBorderColorSelectedHover: $successLight1,
+
+    // half chrome disabled
+    $altButtonHalfChromeTextColorDisabled:      $successLight3,
+    $altButtonHalfChromeIconColorDisabled:      $successLight3,
+    $altButtonHalfChromeOpacityDisabled:        none,
+
+    // half chrome disabled and selected
+    $altButtonHalfChromeTextColorSelectedDisabled:   white,
+    $altButtonHalfChromeIconColorSelectedDisabled:   white,
+    $altButtonHalfChromeBgColorSelectedDisabled:     $successLight3,
+    $altButtonHalfChromeBorderColorSelectedDisabled: $successLight3,
+
+    // outlined chrome default
+    $altButtonOutlinedChromeTextColor:              $successColor,
+    $altButtonOutlinedChromeIconColor:              $successColor,
+    $altButtonOutlinedChromeBorderColor:            $successLight3,
+
+    // outlined chrome hover
+    $altButtonOutlinedChromeTextColorHover:         white,
+    $altButtonOutlinedChromeIconColorHover:         white,
+    $altButtonOutlinedChromeBgColorHover:           $successLight3,
+    $altButtonOutlinedChromeBorderColorHover:       $successLight3,
+
+    // outlined chrome active
+    $altButtonOutlinedChromeTextColorActive:        white,
+    $altButtonOutlinedChromeIconColorActive:        white,
+    $altButtonOutlinedChromeBgColorActive:          $successDark1,
+    $altButtonOutlinedChromeBorderColorActive:      $successDark1,
+    $altButtonOutlinedChromeOpacityActive:          none,
+
+    // outlined chrome selected
+    $altButtonOutlinedChromeTextColorSelected:      white,
+    $altButtonOutlinedChromeIconColorSelected:      white,
+    $altButtonOutlinedChromeBgColorSelected:        $successColor,
+    $altButtonOutlinedChromeBorderColorSelected:    $successColor,
+
+    // outlined chrome selected and hovered
+    $altButtonOutlinedChromeTextColorSelectedHover:   white,
+    $altButtonOutlinedChromeIconColorSelectedHover:   white,
+    $altButtonOutlinedChromeBgColorSelectedHover:     $successColor,
+    $altButtonOutlinedChromeBorderColorSelectedHover: $successColor,
+
+    // outlined chrome disabled
+    $altButtonOutlinedChromeTextColorDisabled:      $successLight3,
+    $altButtonOutlinedChromeIconColorDisabled:      $successLight3,
+    $altButtonOutlinedChromeOpacityDisabled:        none,
+    $altButtonOutlinedChromeBorderColorDisabled:    $successLight3,
+
+    // outlined chrome disabled and selected
+    $altButtonOutlinedChromeTextColorSelectedDisabled:   white,
+    $altButtonOutlinedChromeIconColorSelectedDisabled:   white,
+    $altButtonOutlinedChromeBgColorSelectedDisabled:     $successLight3,
+    $altButtonOutlinedChromeBorderColorSelectedDisabled: $successLight3
+  );
+}

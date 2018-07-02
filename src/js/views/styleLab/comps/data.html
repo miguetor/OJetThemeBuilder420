@@ -15,7 +15,8 @@
                                               aria-label="Departments Table"
                                               data="[[datasource]]"
                                               style='width: 100%;'
-                                              columns-default.sortable='none'
+                                              columns-default='{"sortable": "enabled"}'
+                                              selection-mode='{"row": "multiple", "column": "multiple"}'
                                               columns='[{"headerText": "Department Id", "field": "DepartmentId"},
                                                         {"headerText": "Department Name", "field": "DepartmentName"},
                                                         {"headerText": "Location Id", "field": "LocationId"}]'>
@@ -67,14 +68,89 @@
                                         </li>
                                     </ul>
                                 </oj-list-view>
-                                <oj-indexer id="indexer"
-                                            class="oj-sm-flex-initial oj-flex-item"
-                                            aria-controls="listviewindexer"
-                                            style="height:auto"
-                                            data="[[getIndexerModel()]]">
-                                </oj-indexer>
                             </div>
                         </div>
+                        <oj-list-view id="listview" aria-label="list with static data" selection-mode="multiple">
+            <ul>
+                <li id="amybartlet">
+                    <span class="avatar" style="background-image: url('images/dvt/1.png')"></span>
+                    <div class="container">
+                        <div>
+                            <span class="name">Amy Bartlet</span>
+                        </div>
+                        <div>
+                            <span class="oj-text-xs oj-text-secondary-color">Vice President</span>
+                        </div>
+                    </div>
+                </li>
+                <li id="andyjones">
+                    <span class="avatar" style="background-image: url('images/dvt/10.png')"></span>
+                    <div class="container">
+                        <div>
+                            <span class="name">Andy Jones</span>
+                        </div>
+                        <div>
+                            <span class="oj-text-xs oj-text-secondary-color">Director</span>
+                        </div>
+                    </div>
+                </li>
+                <li id="andrewbugsy">
+                    <span class="avatar" style="background-image: url('images/dvt/11.png')"></span>
+                    <div class="container">
+                        <div>
+                            <span class="name">Andrew Bugsy</span>
+                        </div>
+                        <div>
+                            <span class="oj-text-xs oj-text-secondary-color">Individual Contributer</span>
+                        </div>
+                    </div>
+                </li>
+                <li id="annettbarnes">
+                    <span class="avatar" style="background-image: url('images/dvt/2.png')"></span>
+                    <div class="container">
+                        <div>
+                            <span class="name">Annett Barnes</span>
+                        </div>
+                        <div>
+                            <span class="oj-text-xs oj-text-secondary-color">Individual Contributer</span>
+                        </div>
+                     </div>
+                </li>
+                <li id="bobjones">
+                     <span class="avatar" style="background-image: url('images/dvt/12.png')"></span>
+                     <div class="container">
+                         <div>
+                             <span class="name">Bob Jones</span>
+                         </div>
+                         <div>
+                             <span class="oj-text-xs oj-text-secondary-color">Salesman</span>
+                         </div>
+                     </div>
+                 </li>
+                 <li id="bartbuckler">
+                    <span class="avatar" style="background-image: url('images/dvt/13.png')"></span>
+                    <div class="container">
+                        <div>
+                            <span class="name">Bart Buckler</span>
+                        </div>
+                        <div>
+                            <span class="oj-text-xs oj-text-secondary-color">Purchasing</span>
+                        </div>
+                    </div>
+                 </li>
+                 <li id="bobbyfisher">
+                     <span class="avatar" style="background-image: url('images/dvt/14.png')"></span>
+                     <div class="container">
+                         <div>
+                             <span class="name">Bobby Fisher</span>
+                         </div>
+                         <div>
+                             <span class="oj-text-xs oj-text-secondary-color">Individual Contributer</span>
+                         </div>
+                    </div>
+                 </li>
+            </ul>
+        </oj-list-view>
                         <div class="oj-flex-item oj-sm-12 oj-xl-6">
                             <!-- todo: not responsive, hide it on small screens -->
                             <div class="oj-sm-only-hide">

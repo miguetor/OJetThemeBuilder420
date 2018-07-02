@@ -1,16 +1,459 @@
-// COLLAPSIBLE
+@import "_mytheme.web.variables.scss";
 
-/* inside accordion */
-.oj-accordion-collapsible > .oj-collapsible-header {
-  border-bottom-width: 0;
-  vertical-align: top;
-  line-height: 2em;
-  padding-top: 0;
+// GENERAL
+*:focus:active {
+  outline:0;
 }
+
+.oj-header-border, hr {
+  border: solid $neutralColor4;
+  border-width: 0 0 1px;
+  padding: 0 0 8px;
+}
+
+// PANEL
+.oj-panel {
+  box-shadow: $smallBoxShadow;
+}
+
+// BUTTONS
+
+/* full chroming default group */
+html:not([dir="rtl"]) .oj-buttonset-multi.oj-button-full-chrome .oj-button:not(.oj-buttonset-first).oj-default,
+html:not([dir="rtl"]) .oj-buttonset-multi.oj-button-full-chrome .oj-button:not(.oj-buttonset-first).oj-focus-only,
+html:not([dir="rtl"]) .oj-buttonset-multi.oj-button-full-chrome .oj-button:not(.oj-buttonset-first).oj-hover,
+html:not([dir="rtl"]) .oj-buttonset-multi.oj-button-full-chrome .oj-button:not(.oj-buttonset-first).oj-selected {
+  border-left: 1px solid $neutralColor5;
+}
+
+html:not([dir="rtl"]) .oj-buttonset-multi.oj-button-full-chrome .oj-button:not(.oj-buttonset-first).oj-disabled {
+  border-left: 1px solid transparent;
+}
+
+/* full chroming primary group */
+html:not([dir="rtl"]) .oj-button-primary.oj-buttonset-multi.oj-button-full-chrome .oj-button:not(.oj-buttonset-first).oj-default,
+html:not([dir="rtl"]) .oj-button-primary.oj-buttonset-multi.oj-button-full-chrome .oj-button:not(.oj-buttonset-first).oj-focus-only,
+html:not([dir="rtl"]) .oj-button-primary.oj-buttonset-multi.oj-button-full-chrome .oj-button:not(.oj-buttonset-first).oj-hover,
+html:not([dir="rtl"]) .oj-button-primary.oj-buttonset-multi.oj-button-full-chrome .oj-button:not(.oj-buttonset-first).oj-selected {
+  border-left: 1px solid $primaryDark1;
+}
+
+html:not([dir="rtl"]) .oj-button-primary.oj-buttonset-multi.oj-button-full-chrome .oj-button:not(.oj-buttonset-first).oj-disabled {
+  border-left: 1px solid transparent;
+}
+
+/* accent group */
+html:not([dir="rtl"]) .oj-button-accent.oj-buttonset-multi.oj-button-full-chrome .oj-button:not(.oj-buttonset-first).oj-default,
+html:not([dir="rtl"]) .oj-button-accent.oj-buttonset-multi.oj-button-full-chrome .oj-button:not(.oj-buttonset-first).oj-focus-only,
+html:not([dir="rtl"]) .oj-button-accent.oj-buttonset-multi.oj-button-full-chrome .oj-button:not(.oj-buttonset-first).oj-hover,
+html:not([dir="rtl"]) .oj-button-accent.oj-buttonset-multi.oj-button-full-chrome .oj-button:not(.oj-buttonset-first).oj-selected {
+  border-left: 1px solid $accentDark1;
+}
+
+html:not([dir="rtl"]) .oj-button-accent.oj-buttonset-multi.oj-button-full-chrome .oj-button:not(.oj-buttonset-first).oj-disabled {
+  border-left: 1px solid transparent;
+}
+
+/* full chroming confirm group */
+html:not([dir="rtl"]) .oj-button-confirm.oj-buttonset-multi.oj-button-full-chrome .oj-button:not(.oj-buttonset-first).oj-default,
+html:not([dir="rtl"]) .oj-button-confirm.oj-buttonset-multi.oj-button-full-chrome .oj-button:not(.oj-buttonset-first).oj-focus-only,
+html:not([dir="rtl"]) .oj-button-confirm.oj-buttonset-multi.oj-button-full-chrome .oj-button:not(.oj-buttonset-first).oj-hover,
+html:not([dir="rtl"]) .oj-button-confirm.oj-buttonset-multi.oj-button-full-chrome .oj-button:not(.oj-buttonset-first).oj-selected {
+  border-left: 1px solid #26AB5F;
+}
+
+html:not([dir="rtl"]) .oj-button-confirm.oj-buttonset-multi.oj-button-full-chrome .oj-button:not(.oj-buttonset-first).oj-disabled {
+  border-left: 1px solid transparent;
+}
+
+/* outlined default */
+.oj-button-jqui.oj-default.oj-button-outlined-chrome,
+.oj-button-jqui.oj-focus-only.oj-button-outlined-chrome,
+.oj-button.oj-default.oj-button-outlined-chrome .oj-button-button,
+.oj-button.oj-focus-only.oj-button-outlined-chrome .oj-button-button {
+  border-color: $buttonOutlinedChromeBorderColor;
+  background-color: transparentize($buttonOutlinedChromeBorderColor, .74);
+  background-image: none;
+  box-shadow: none;
+}
+
+/* outlined primary */
+.oj-button-primary.oj-buttonset-multi.oj-button-outlined-chrome .oj-button-outlined-chrome,
+.oj-button-primary.oj-button-jqui.oj-default.oj-button-outlined-chrome,
+.oj-button-primary.oj-button-jqui.oj-focus-only.oj-button-outlined-chrome,
+.oj-button-primary.oj-button.oj-default.oj-button-outlined-chrome .oj-button-button,
+.oj-button-primary.oj-button.oj-focus-only.oj-button-outlined-chrome .oj-button-button {
+  border-color: $primaryLight5;
+  background-color: transparentize($primaryLight5, .82);
+  background-image: none;
+  box-shadow: none;
+}
+
+/* outlined accent */
+.oj-button-accent.oj-buttonset-multi.oj-button-outlined-chrome .oj-button-outlined-chrome,
+.oj-button-accent.oj-button-jqui.oj-default.oj-button-outlined-chrome,
+.oj-button-accent.oj-button-jqui.oj-focus-only.oj-button-outlined-chrome,
+.oj-button-accent.oj-button.oj-default.oj-button-outlined-chrome .oj-button-button,
+.oj-button-accent.oj-button.oj-focus-only.oj-button-outlined-chrome .oj-button-button {
+  border-color: $accentLight5;
+  background-color: transparentize($accentLight5, .76);
+  background-image: none;
+  box-shadow: none;
+}
+
+/* outlined confirm */
+.oj-button-confirm.oj-buttonset-multi.oj-button-outlined-chrome .oj-button-outlined-chrome,
+.oj-button-confirm.oj-button-jqui.oj-default.oj-button-outlined-chrome,
+.oj-button-confirm.oj-button-jqui.oj-focus-only.oj-button-outlined-chrome,
+.oj-button-confirm.oj-button.oj-default.oj-button-outlined-chrome .oj-button-button,
+.oj-button-confirm.oj-button.oj-focus-only.oj-button-outlined-chrome .oj-button-button {
+  border-color: $successLight5;
+  background-color: transparentize($successLight5, .76);
+  background-image: none;
+  box-shadow: none;
+}
+
+// MODAL
+
+/* close button */
+html:not([dir="rtl"]) .oj-dialog-header-close-wrapper {
+  margin-right: -0.75rem !important;
+  margin-top: -0.25rem;
+  float: right;
+}
+
+/* header */
+.oj-dialog-header {
+  font-weight: 500;
+}
+
+// RADIO AND CHECKBOX SET
+.oj-radioset .oj-choice-item.oj-enabled .oj-radio:hover,
+.oj-checkboxset .oj-choice-item.oj-enabled .oj-checkbox:hover {
+  cursor: pointer;
+}
+
+// SELECT
+.oj-listbox-dropdown-open .oj-select-choice,
+.oj-listbox-dropdown-open .oj-select-choices,
+.oj-listbox-dropdown-open .oj-combobox-choice {
+  border-color: $accentColor;
+}
+
+html:not([dir="rtl"]) .oj-combobox-selected-choice,
+html:not([dir="rtl"]) .oj-select-selected-choice {
+  background-color: $buttonBgColor;
+}
+
+// SLIDER
+.oj-slider:not(.oj-disabled) .oj-slider-thumb:hover,
+.oj-slider:not(.oj-disabled) .oj-slider-bar:hover {
+  cursor: pointer;
+}
+
+.oj-slider.oj-disabled .oj-slider-thumb {
+  box-shadow: none;
+}
+
+// SWITCH
+.oj-switch:not(.oj-disabled):not(.oj-read-only):hover {
+  cursor: pointer;
+}
+
+.oj-switch.oj-selected.oj-hover:not(.oj-disabled):not(.oj-read-only) .oj-switch-thumb,
+.oj-switch.oj-hover:not(.oj-disabled):not(.oj-read-only) .oj-switch-thumb {
+  box-shadow: $switchThumbShadow;
+}
+
+// LISTBOX
+.oj-listbox-drop {
+  overflow: auto;
+  border-radius: $smallBorderRadius;
+}
+
+.oj-listbox-drop .oj-listbox-results {
+  margin: 0;
+}
+
+html:not([dir="rtl"]) .oj-listbox-spyglass-box {
+  padding-right: 12px;
+}
+
+// MESSAGES
+.oj-message-status-icon {
+  top: 0px;
+}
+
+.oj-message-content .oj-message-summary {
+  color: $primaryTextColor;
+}
+
+// DATEPICKER
+.oj-datepicker-calendar thead {
+  border-bottom: 1px solid $neutralColor4;
+}
+
+.oj-datepicker-calendar thead tr th {
+  font-weight: bold;
+}
+
+.oj-datepicker-calendar thead:before {
+  content: "-";
+  display: block;
+  line-height: 0.5em;
+  color: transparent;
+}
+
+.oj-datepicker-calendar tbody:before {
+  content: "-";
+  display: block;
+  line-height: 0.7em;
+  color: transparent;
+}
+
+.oj-inputdatetime-input-container[aria-describedby^="ui-"] .oj-inputdatetime-input,
+.oj-inputdatetime-input-container[aria-describedby^="ui-"] .oj-inputdatetime-input-trigger {
+  border-color: $accentColor;
+}
+
+// TRAIN
+.oj-train-label.oj-selected {
+  text-decoration: none;
+  cursor: default;
+  font-weight: 500;
+  color: #333;
+}
+
+a.oj-train-label {
+  color: #666666;
+  text-align: center;
+}
+
+.oj-train-button-connector.oj-train-fill {
+  background-color: $buttonBgColorHover;
+  background-image: none;
+  top: 0;
+}
+
+// DATAGRID
+.oj-fwk-icon-arrow03-n:before, .oj-datagrid-sort-ascending-icon:before {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.oj-fwk-icon-arrow03-s:before, .oj-datagrid-sort-descending-icon:before {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+// TABLE GENERAL
+.oj-table-column-header-cell {
+  line-height: calc(2.75em - 2 * 0.4em);
+}
+
+.oj-table-element:not(.oj-table-column-header-resizing) .oj-table-body-row.oj-focus:not(.oj-table-body-row-edit),
+.oj-table-element:not(.oj-table-column-header-resizing) .oj-table-column-header-cell.oj-focus {
+  outline: none;
+}
+
+.oj-table-data-cell.oj-selected {
+  background-color: $accentLight5;
+}
+
+/* icon */
+.oj-fwk-icon-arrow-n:before, .oj-table-column-header-asc-icon:before {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.oj-fwk-icon-arrow-s:before, .oj-table-column-header-desc-icon:before {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+// TABLE NORMAL STYLE
+.oj-table:not(.sca-table-contrast-header) .oj-table-element .oj-table-header {
+  color: $tertiaryTextColor;
+}
+
+// TABLE STRIPED
+.oj-table.sca-table-striped .oj-table-element .oj-table-body .oj-table-body-row:nth-child(odd):not(.oj-hover),
+.oj-table.sca-table-striped-only .oj-table-element .oj-table-body .oj-table-body-row:nth-child(odd):not(.oj-hover) {
+  background-color: $neutralColor2;
+}
+
+.oj-table.sca-table-striped-only .oj-table-element .oj-table-body .oj-table-body-row {
+  border-color: transparent;
+}
+
+// TABLE CONTRAST HEADER
+.oj-table.sca-table-contrast-header .oj-table-element .oj-table-header {
+  border-color: $neutralColor15;
+  background-color: $neutralColor15;
+  color: white;
+}
+
+.oj-table.sca-table-contrast-header .oj-table-column-header-cell.oj-hover,
+.oj-table.sca-table-contrast-header .oj-table-column-header-cell.oj-selected {
+  background-color: $neutralColor14;
+  color: white;
+}
+
+/* icon */
+.oj-table.sca-table-contrast-header .oj-table-column-header-asc-icon,
+.oj-table.sca-table-contrast-header .oj-table-column-header-dsc-icon {
+  color: $neutralColor9;
+}
+
+.oj-table.sca-table-contrast-header .oj-table-column-header-asc-icon.oj-hover,
+.oj-table.sca-table-contrast-header .oj-table-column-header-dsc-icon.oj-hover {
+  color: white;
+}
+
+// LISTVIEW
+.oj-listview-group-item,
+.oj-listview-group-item.oj-selected,
+.oj-listview-group-item:hover, {
+  background-color: $neutralColor2 !important;
+  border-color: $neutralColor3 !important;
+}
+
+.oj-listview-item {
+  background-image: none;
+}
+
+.oj-listview-item:not(:last-child) {
+  border-bottom: 1px solid $neutralColor3;
+  border-top-color: transparent !important;
+}
+
+/* striped */
+.oj-listview.sca-listview-striped .oj-listview-element .oj-listview-item:nth-child(even):not(.oj-hover):not(.oj-selected),
+.oj-listview.sca-listview-striped-only .oj-listview-element .oj-listview-item:nth-child(even):not(.oj-hover):not(.oj-selected) {
+  background-color: $neutralColor2;
+}
+
+.oj-listview.sca-listview-striped-only .oj-listview-element .oj-listview-item {
+  border-color: transparent;
+}
+
+// MENU SUBMENU
+html:not([dir="rtl"]) .oj-menu-submenu-icon {
+  right: 10px;
+}
+
+.oj-menu-submenu-icon {
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+}
+
+
+// NAV LIST VERTICAL
+.oj-navigationlist-vertical .oj-navigationlist-item .oj-navigationlist-item-label {
+  font-weight: 500;
+}
+
+.oj-navigationlist-vertical:not(.oj-navigationlist-icon-only) .oj-navigationlist-item.oj-selected .oj-navigationlist-item-icon {
+  color: $primaryColor;
+}
+
+.oj-navigationlist-vertical .oj-navigationlist-item.oj-hover:not(.oj-selected) .oj-navigationlist-item-icon,
+.oj-navigationlist-vertical .oj-navigationlist-item.oj-hover:not(.oj-selected) .oj-navigationlist-item-label {
+  color: $primaryTextColor !important;
+}
+
+/* icon only */
+.oj-navigationlist-vertical.oj-navigationlist-icon-only .oj-navigationlist-item.oj-selected.oj-hover .oj-navigationlist-item-icon {
+  color: $neutralColor1;
+}
+
+
+// NAV LIST HORIZONTAL
+.oj-navigationlist-horizontal .oj-navigationlist-item .oj-navigationlist-item-label {
+  font-weight: 500;
+}
+
+.oj-navigationlist-horizontal .oj-navigationlist-item.oj-selected {
+  border-bottom-color: transparent;
+}
+
+.oj-navigationlist-horizontal:not(.oj-navigationlist-icon-only) .oj-navigationlist-item.oj-selected.oj-hover .oj-navigationlist-item-icon {
+  color: $primaryColor;
+}
+
+.oj-navigationlist-horizontal .oj-navigationlist-item.oj-hover:not(.oj-selected) .oj-navigationlist-item-icon,
+.oj-navigationlist-horizontal .oj-navigationlist-item.oj-hover:not(.oj-selected) .oj-navigationlist-item-label {
+  color: $primaryTextColor !important;
+}
+
+/* icon only */
+.oj-navigationlist-horizontal.oj-navigationlist-icon-only .oj-navigationlist-item.oj-selected.oj-hover .oj-navigationlist-item-icon {
+  color: $neutralColor1;
+}
+
+
+// TAB BAR VERTICAL
+:not(.oj-tabbar-icon-only).oj-tabbar-vertical .oj-tabbar-item a.oj-tabbar-item-content .oj-tabbar-item-label,
+:not(.oj-tabbar-icon-only).oj-tabbar-vertical .oj-tabbar-item.oj-selected a.oj-tabbar-item-content .oj-tabbar-item-label {
+  font-weight: 500;
+}
+
+.oj-tabbar-vertical .oj-tabbar-item.oj-hover:not(.oj-selected) .oj-tabbar-item-icon,
+.oj-tabbar-vertical .oj-tabbar-item.oj-hover:not(.oj-selected) .oj-tabbar-item-label {
+  color: $primaryTextColor !important;
+}
+
+:not(.oj-tabbar-icon-only).oj-tabbar-vertical .oj-tabbar-element {
+  border-left: 1px solid #E4E4E4;
+}
+
+html:not([dir="rtl"]) :not(.oj-tabbar-icon-only).oj-tabbar-vertical .oj-tabbar-item {
+  border-width: 0 0 0 1px;
+  margin-left: -1px;
+}
+
+/* icon only */
+.oj-tabbar-vertical.oj-tabbar-icon-only .oj-tabbar-item.oj-selected.oj-hover .oj-tabbar-item-icon {
+  color: $neutralColor1;
+}
+
+
+// TAB BAR HORIZONTAL
+:not(.oj-tabbar-icon-only).oj-tabbar-horizontal .oj-tabbar-item a.oj-tabbar-item-content .oj-tabbar-item-label,
+:not(.oj-tabbar-icon-only).oj-tabbar-horizontal .oj-tabbar-item.oj-selected a.oj-tabbar-item-content .oj-tabbar-item-label {
+  font-weight: 500;
+}
+
+.oj-tabbar-horizontal .oj-tabbar-item.oj-hover:not(.oj-selected) .oj-tabbar-item-icon,
+.oj-tabbar-horizontal .oj-tabbar-item.oj-hover:not(.oj-selected) .oj-tabbar-item-label {
+  color: $primaryTextColor !important;
+}
+
+:not(.oj-tabbar-icon-only).oj-tabbar-horizontal .oj-tabbar-element {
+  border-bottom: 1px solid #E4E4E4;
+}
+
+html:not([dir="rtl"]) :not(.oj-tabbar-icon-only).oj-tabbar-horizontal .oj-tabbar-item {
+  border-width: 0 0 1px 0;
+  margin-bottom: -1px;
+}
+
+/* icon only */
+.oj-tabbar-vertical.oj-tabbar-icon-only .oj-tabbar-item.oj-selected.oj-hover .oj-tabbar-item-icon {
+  color: $neutralColor1;
+}
+
+// FILE PICKER
+.oj-filepicker-text {
+  margin: 0;
+}
+
+// COLLAPSIBLE
 
 /* icon accordion */
 html:not([dir="rtl"]) .oj-accordion-collapsible > .oj-collapsible-header > .oj-collapsible-header-icon {
-  margin: 0px 0px -2px 0px;
+  margin: 0px 0px 2px 0px;
 }
 
 /* container */
@@ -22,7 +465,26 @@ html:not([dir="rtl"]) .oj-accordion-collapsible > .oj-collapsible-header > .oj-c
 }
 
 /* icon */
+.oj-collapsible-header-icon {
+  padding: 10px 10px 10px 0px;
+  outline-offset: -5px;
+}
+
 html:not([dir="rtl"]) .oj-collapsible-header a, html:not([dir="rtl"]) .oj-collapsible-header .oj-collapsible-header-icon {
-  margin: 0px 5px -2px 0px;
+  margin: 0px 0px 2px 0px;
   font-size: 18px;
+}
+
+.oj-accordion-collapsible > .oj-collapsible-header {
+  border-top: 1px solid $neutralColor3;
+  border-left: 1px solid $neutralColor3;
+  border-right: 1px solid $neutralColor3;
+}
+
+.oj-accordion-collapsible:last-child > .oj-collapsible-header {
+  border-bottom: 1px solid $neutralColor3;
+}
+
+.oj-accordion-collapsible > .oj-collapsible-wrapper > .oj-collapsible-content {
+  border-top: 1px solid $neutralColor3;
 }

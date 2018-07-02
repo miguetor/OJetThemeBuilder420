@@ -209,7 +209,7 @@ define(['ojs/ojcore', 'knockout', 'jquery', 'promise', 'ojs/ojknockout', 'ojs/oj
           self.routerState(self.router.stateId());
       });
 
-      self.bgcolor = ko.observable(true);
+      self.bgcolor = ko.observable(false);
 
       var compRouterId = sessionStorage.getItem('labitem');
 
