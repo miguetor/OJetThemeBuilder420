@@ -16,6 +16,23 @@
   box-shadow: $smallBoxShadow;
 }
 
+// SHADOWS
+.oj-panel-shadow-sm {
+  box-shadow: $smallBoxShadow;
+}
+
+.oj-panel-shadow-md {
+  box-shadow: $mediumBoxShadow;
+}
+
+.oj-panel-shadow-lg {
+  box-shadow: $largeBoxShadow;
+}
+
+.oj-panel-shadow-xl {
+  box-shadow: $extraLargeBoxShadow;
+}
+
 // BUTTONS
 
 /* full chroming default group */
