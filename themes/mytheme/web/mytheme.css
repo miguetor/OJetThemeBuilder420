@@ -19738,6 +19738,18 @@ oj-module {
 .oj-panel {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); }
 
+.oj-panel-shadow-sm {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); }
+
+.oj-panel-shadow-md {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08); }
+
+.oj-panel-shadow-lg {
+  box-shadow: 0 14px 25px rgba(0, 0, 0, 0.16); }
+
+.oj-panel-shadow-xl {
+  box-shadow: 0 28px 50px rgba(0, 0, 0, 0.16); }
+
 /* full chroming default group */
 html:not([dir="rtl"]) .oj-buttonset-multi.oj-button-full-chrome .oj-button:not(.oj-buttonset-first).oj-default,
 html:not([dir="rtl"]) .oj-buttonset-multi.oj-button-full-chrome .oj-button:not(.oj-buttonset-first).oj-focus-only,
@@ -20062,8 +20074,26 @@ html:not([dir="rtl"]) :not(.oj-tabbar-icon-only).oj-tabbar-horizontal .oj-tabbar
   margin-bottom: -1px; }
 
 /* icon only */
-.oj-tabbar-vertical.oj-tabbar-icon-only .oj-tabbar-item.oj-selected.oj-hover .oj-tabbar-item-icon {
+.oj-tabbar-horizontal.oj-tabbar-icon-only .oj-tabbar-item.oj-selected.oj-hover .oj-tabbar-item-icon {
   color: white; }
+
+/* sca tab bar */
+html:not([dir="rtl"]) .oj-tabbar-horizontal.sca-tabbar:not(.oj-tabbar-icon-only) .oj-tabbar-item {
+  border-right-width: 1px;
+  border-left-width: 1px;
+  border-top-width: 2px;
+  border-bottom-width: 1px; }
+
+.oj-tabbar-horizontal.sca-tabbar:not(.oj-tabbar-icon-only) .oj-tabbar-item {
+  border-width: 0 0 1px 0;
+  border-style: solid; }
+
+.oj-tabbar-horizontal.sca-tabbar:not(.oj-tabbar-icon-only) .oj-tabbar-item.oj-selected {
+  border-color: #FF4433;
+  border-right-color: #dedede;
+  border-left-color: #dedede;
+  border-bottom-color: white;
+  background-color: white; }
 
 .oj-filepicker-text {
   margin: 0; }

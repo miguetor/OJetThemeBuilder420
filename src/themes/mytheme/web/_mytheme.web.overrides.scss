@@ -457,8 +457,29 @@ html:not([dir="rtl"]) :not(.oj-tabbar-icon-only).oj-tabbar-horizontal .oj-tabbar
 }
 
 /* icon only */
-.oj-tabbar-vertical.oj-tabbar-icon-only .oj-tabbar-item.oj-selected.oj-hover .oj-tabbar-item-icon {
+.oj-tabbar-horizontal.oj-tabbar-icon-only .oj-tabbar-item.oj-selected.oj-hover .oj-tabbar-item-icon {
   color: $neutralColor1;
+}
+
+/* sca tab bar */
+html:not([dir="rtl"]) .oj-tabbar-horizontal.sca-tabbar:not(.oj-tabbar-icon-only) .oj-tabbar-item {
+  border-right-width: 1px;
+  border-left-width: 1px;
+  border-top-width: 2px;
+  border-bottom-width: 1px;
+}
+
+.oj-tabbar-horizontal.sca-tabbar:not(.oj-tabbar-icon-only) .oj-tabbar-item {
+  border-width: 0 0 1px 0;
+  border-style: solid;
+}
+
+.oj-tabbar-horizontal.sca-tabbar:not(.oj-tabbar-icon-only) .oj-tabbar-item.oj-selected {
+  border-color: $primaryColor;
+  border-right-color: $neutralColor4;
+  border-left-color: $neutralColor4;
+  border-bottom-color: white;
+  background-color: white;
 }
 
 // FILE PICKER

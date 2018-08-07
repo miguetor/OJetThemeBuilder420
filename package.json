@@ -8,7 +8,8 @@
     "homepage": "http://oraclejet.org"
   },
   "dependencies": {
-    "@oracle/oraclejet": "~4.2.0"
+    "@oracle/oraclejet": "~4.2.0",
+    "reinstall": "^2.0.0"
   },
   "devDependencies": {
     "@oracle/grunt-oraclejet": "~4.2.0",
