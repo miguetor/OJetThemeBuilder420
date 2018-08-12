@@ -437,6 +437,12 @@ html:not([dir="rtl"]) :not(.oj-tabbar-icon-only).oj-tabbar-vertical .oj-tabbar-i
 
 
 // TAB BAR HORIZONTAL
+.oj-tabbar-horizontal:not(.oj-tabbar-icon-only) .oj-tabbar-item-content {
+  -webkit-justify-content: center;
+  justify-content: center;
+  padding: 10px 1.07143rem 10px;
+}
+
 :not(.oj-tabbar-icon-only).oj-tabbar-horizontal .oj-tabbar-item a.oj-tabbar-item-content .oj-tabbar-item-label,
 :not(.oj-tabbar-icon-only).oj-tabbar-horizontal .oj-tabbar-item.oj-selected a.oj-tabbar-item-content .oj-tabbar-item-label {
   font-weight: 500;
@@ -454,6 +460,36 @@ html:not([dir="rtl"]) :not(.oj-tabbar-icon-only).oj-tabbar-vertical .oj-tabbar-i
 html:not([dir="rtl"]) :not(.oj-tabbar-icon-only).oj-tabbar-horizontal .oj-tabbar-item {
   border-width: 0 0 1px 0;
   margin-bottom: -1px;
+}
+
+/* icon only */
+.oj-tabbar-horizontal.oj-tabbar-icon-only .oj-tabbar-item.oj-selected.oj-hover .oj-tabbar-item-icon {
+  color: $neutralColor1;
+}
+
+/* bold */
+.oj-tabbar-horizontal.bold .oj-tabbar-item:not(.oj-selected) .oj-tabbar-item-icon,
+.oj-tabbar-horizontal.bold .oj-tabbar-item:not(.oj-selected) .oj-tabbar-item-label {
+  color: $tertiaryTextColor !important;
+}
+
+.oj-tabbar-horizontal.bold .oj-tabbar-item.oj-hover:not(.oj-selected) .oj-tabbar-item-icon,
+.oj-tabbar-horizontal.bold .oj-tabbar-item.oj-hover:not(.oj-selected) .oj-tabbar-item-label {
+  color: $secondaryTextColor !important;
+}
+
+.oj-tabbar-horizontal.bold .oj-tabbar-item.oj-selected .oj-tabbar-item-icon,
+.oj-tabbar-horizontal.bold .oj-tabbar-item.oj-selected .oj-tabbar-item-label {
+  color: $primaryTextColor !important;
+}
+
+:not(.oj-tabbar-icon-only).oj-tabbar-horizontal.bold .oj-tabbar-element {
+  border-bottom: 2px solid $neutralColor2;
+}
+
+html:not([dir="rtl"]) :not(.oj-tabbar-icon-only).oj-tabbar-horizontal .oj-tabbar-item {
+  border-width: 0 0 2px 0;
+  margin-bottom: -2px;
 }
 
 /* icon only */
@@ -480,6 +516,51 @@ html:not([dir="rtl"]) .oj-tabbar-horizontal.sca-tabbar:not(.oj-tabbar-icon-only)
   border-left-color: $neutralColor4;
   border-bottom-color: white;
   background-color: white;
+}
+
+/* sca tab bar bold */
+.oj-tabbar-horizontal.sca-tabbar-bold .oj-tabbar-item:not(.oj-selected) .oj-tabbar-item-icon,
+.oj-tabbar-horizontal.sca-tabbar-bold .oj-tabbar-item:not(.oj-selected) .oj-tabbar-item-label {
+  color: $tertiaryTextColor !important;
+}
+
+.oj-tabbar-horizontal.sca-tabbar-bold .oj-tabbar-item.oj-hover:not(.oj-selected) .oj-tabbar-item-icon,
+.oj-tabbar-horizontal.sca-tabbar-bold .oj-tabbar-item.oj-hover:not(.oj-selected) .oj-tabbar-item-label {
+  color: $secondaryTextColor !important;
+}
+
+.oj-tabbar-horizontal.sca-tabbar-bold .oj-tabbar-item.oj-selected .oj-tabbar-item-icon,
+.oj-tabbar-horizontal.sca-tabbar-bold .oj-tabbar-item.oj-selected .oj-tabbar-item-label {
+  color: $secondaryTextColor !important;
+}
+
+html:not([dir="rtl"]) :not(.oj-tabbar-icon-only).oj-tabbar-horizontal.sca-tabbar-bold .oj-tabbar-item {
+  border-width: 0 0 2px 0;
+  margin-bottom: -2px;
+}
+
+html:not([dir="rtl"]) .oj-tabbar-horizontal.sca-tabbar-bold:not(.oj-tabbar-icon-only) .oj-tabbar-item {
+  border-right-width: 2px;
+  border-left-width: 2px;
+  border-top-width: 2px;
+  border-bottom-width: 2px;
+}
+
+.oj-tabbar-horizontal.sca-tabbar-bold:not(.oj-tabbar-icon-only) .oj-tabbar-item {
+  border-width: 0 0 2px 0;
+  border-style: solid;
+}
+
+.oj-tabbar-horizontal.sca-tabbar-bold:not(.oj-tabbar-icon-only) .oj-tabbar-item.oj-selected {
+  border-color: $primaryColor;
+  border-right-color: $neutralColor2;
+  border-left-color: $neutralColor2;
+  border-bottom-color: white;
+  background-color: white;
+}
+
+:not(.oj-tabbar-icon-only).oj-tabbar-horizontal.sca-tabbar-bold .oj-tabbar-element {
+  border-bottom: 2px solid $neutralColor2;
 }
 
 // FILE PICKER
@@ -525,4 +606,38 @@ html:not([dir="rtl"]) .oj-collapsible-header a, html:not([dir="rtl"]) .oj-collap
 
 .oj-accordion-collapsible > .oj-collapsible-wrapper > .oj-collapsible-content {
   border-top: 1px solid $neutralColor3;
+}
+
+// PAGING CONTROL
+label.oj-pagingcontrol-nav-label, .oj-pagingcontrol-nav-input-max, .oj-pagingcontrol-nav-input-summary {
+  color: $secondaryTextColor;
+}
+
+.oj-pagingcontrol-nav-page {
+  color: $primaryColor;
+  min-width: 1rem;
+  padding: 4px 10px;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  text-decoration-line: none;
+  text-decoration-style: initial;
+  text-decoration-color: initial;
+  font-size: 1rem;
+  outline: none;
+  outline-color: initial;
+  outline-style: none;
+  outline-width: initial;
+}
+
+a.oj-pagingcontrol-nav-page:visited {
+  color: $primaryColor;
+}
+
+.oj-pagingcontrol-nav-page.oj-selected {
+  border: 1px solid $neutralColor3;
+  background-color: $neutralColor3;
+  border-radius: $smallBorderRadius;
+  display: inline;
+  color: $primaryTextColor;
 }
